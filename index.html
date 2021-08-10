@@ -15,20 +15,21 @@
         <nav class="navigation">
 
             <ul class="nav-ul">
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Resume</li>
+                <li id="display-home"><button class="button-nav" >Home</button> </li>
+                <li id="display-about"><button class="button-nav" >About</button> </li>
+                <li id="display-work"><button class="button-nav">Work</button> </li>
+                <li id="display-resume"><button class="button-nav">Resume</button> </li>
+
             </ul>
 
             <div class="contact">
-                <p>Contact</p>
+                <p id="display-contact"><button class="button-nav">Contact</button></p>
             </div>
         </nav>
     </header>
 
     <main class="main-content">
-        <Section class="text-content">
+        <Section class="home-content" id="homeContent">
             <div>
                 <h2>Hi, I'm Daniel.</h2>
                 <h1>Designer, UX oriented.</h1>
@@ -36,6 +37,101 @@
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
                     labore provident temporibus aspernatur veniam.</h3>
             </div>
+        </Section>
+        <Section class="about-content hide" id="aboutContent">
+            <div>
+                <h2>Hi, I'm Daniel.</h2>
+                <h1>ABOUT CONTENT</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+                    labore provident temporibus aspernatur veniam.</h3>
+            </div>
+        </Section>
+        <Section class="work-content hide" id="workContent">
+            <div>
+                <h2>Hi, I'm Daniel.</h2>
+                <h1>WORK CONTENT</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+                    labore provident temporibus aspernatur veniam.</h3>
+            </div>
+        </Section>
+        <Section class="resume-content hide" id="resumeContent">
+            <div>
+                <h2>Hi, I'm Daniel.</h2>
+                <h1>RESUME CONTENT</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+                    labore provident temporibus aspernatur veniam.</h3>
+            </div>
+        </Section>
+        <Section>
+            <div class="container contact-form hide" id="contactContent">
+                <h1 class="brand">CONTACT US</h1>
+                <div class="box-container">
+              
+                  <div class="contact">
+                    <h3>Email Us</h3>
+                    <div class="alert">Your message has been sent!</div>
+                    <form id="contactForm">
+                      <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                      </p>
+                      <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" id="email" required>
+                      </p>
+                      <p>
+                        <label>Topic</label>
+                        <select name="topic" id="topic" required>
+                          <option value="">----Pick a topic----</option>
+                          <option value="Reviews">Reviews</option>
+                          <option value="Castle in the Sky">Suggestions</option>
+                          <option value="Information">Information</option>
+                          <option value="Others">Others</option>
+              
+                        </select>
+                      </p>
+              
+                      <p>
+                        <label>Movie</label>
+                        <select name="movie" id="movie" required>
+                          <option value="">----Pick a movie----</option>
+                          <option value="Castle in the Sky">Castle in the Sky</option>
+                          <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+                          <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+                          <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+                          <option value="Only Yesterday">Only Yesterday</option>
+                          <option value="Porco Rosso">Porco Rosso</option>
+                          <option value="Pom Poko">Pom Poko</option>
+                          <option value="Whisper of the Heart">Whisper of the Heart</option>
+                          <option value="Princess Mononoke">Princess Mononoke</option>
+                          <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+                          <option value="Spirited Away">Spirited Away</option>
+                          <option value="The Cat Returns">The Cat Returns</option>
+                          <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+                          <option value="Tales from Earthsea">Tales from Earthsea</option>
+                          <option value="Ponyo">Ponyo</option>
+                          <option value="Arrietty">Arrietty</option>
+                          <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+                          <option value="The Wind Rises">The Wind Rises</option>
+                          <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
+                          <option value="When Marnie Was There">When Marnie Was There</option>
+                          <option value="The Red Turtle">The Red Turtle</option>
+                          </select>
+                      </p>
+                      <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                      </p>
+                      <p class="submit-contact">
+                        <button type="submit" class="btn-submit">Submit</button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>  
         </Section>
         <section class="photo-container">
             <div class="bio-photo-div">
@@ -45,6 +141,7 @@
     </main>
 
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
