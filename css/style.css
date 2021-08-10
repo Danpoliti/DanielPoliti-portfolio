@@ -138,9 +138,17 @@ html, body {
 .contact-content {
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 4em;
     font-size: large;
     padding-left: 5em;
+    background: gray;
+    border-radius: 20px;
+    width: 600px;
 }
+
+/* form {
+    text-align: justify;
+} */
 
 .contact-fields form button:hover, .contact-fields form button:focus {
     color: #fff;
@@ -148,12 +156,27 @@ html, body {
 }
 
 .contact-fields form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "p full" "p full" "p full" "p submit-contact";
+    display: flex;
+    flex-direction: column;
+    /* grid-template-areas: "p full" "p full" "p full" "p submit-contact"; */
     grid-gap: 10px;
 }
 
+.contact-fields input, textarea {
+    background: rgb(78, 78, 78);
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 450px;
+}
+.contact-fields textarea {
+
+    height: 12em;
+
+}
+.contact-fields p {
+    margin-top: 0;
+}
 .hide {
     display: none;
 }
