@@ -79,7 +79,9 @@ ul {
 }
 
 html, body {
-    background: rgb(78, 78, 78);
+    background: rgb(47, 47, 47);
+    background-image: radial-gradient(circle at top right, rgb(100, 100, 100) 20%, rgba(255, 255, 255, 0), transparent);
+    background-size: cover;
     color: white;
     text-shadow: 1px 1px 8px black;
     margin: 0;
@@ -100,7 +102,7 @@ html, body {
 
 .bio-photo-div {
     /* max-width: 55%; */
-    background-image: radial-gradient(circle at top right, rgb(150, 147, 147) 20%, rgba(255, 255, 255, 0), transparent);
+    background-image: radial-gradient(circle at top right, rgb(100, 100, 100) 20%, rgba(255, 255, 255, 0), transparent);
     height: 1000px;
     display: flex;
     justify-content: flex-end;
@@ -135,15 +137,27 @@ html, body {
     padding-left: 5em;
 }
 
+.resume-content img {
+    max-width: 900px;
+    margin: 1em;
+}
+
+.resume-scroll {
+    background-image: linear-gradient(45deg, rgba(63, 63, 63, 0.5), rgba(128, 128, 128, 0.5), rgba(63, 63, 63, 0.5));
+    width: 1000px;
+    overflow: auto;
+    height: 500px;
+    border-radius: 10px;
+}
+
 .contact-content {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 4em;
+    margin: auto;
+    margin-top: 5em;
     font-size: large;
-    padding-left: 5em;
-    background: gray;
+    padding-left: 2em;
+    background: rgba(75, 60, 60, 0.2);
     border-radius: 20px;
-    width: 600px;
+    width: 650px;
 }
 
 /* form {
@@ -159,24 +173,128 @@ html, body {
     display: flex;
     flex-direction: column;
     /* grid-template-areas: "p full" "p full" "p full" "p submit-contact"; */
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .contact-fields input, textarea {
     background: rgb(78, 78, 78);
+    color: white;
     border: none;
     border-radius: 5px;
-    height: 2em;
-    width: 450px;
+    height: 2.5em;
+    width: 600px;
 }
+
+#display-home {
+    color: orange;
+}
+
+#download-button {
+    width: 5%;
+    text-align: center;
+    padding: 0;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    background-color: rgb(112, 111, 111);
+    border: none;
+    border-radius: 5px;
+}
+#download-button:hover {
+    background-color: rgb(170, 170, 170);
+    
+}
+#download-button:active {
+    background-color: rgb(52, 151, 98);
+    
+}
+#download-button img {
+    width: 70%;
+    margin: 5px 5px;
+
+}
+
 .contact-fields textarea {
-
     height: 12em;
-
 }
+
 .contact-fields p {
     margin-top: 0;
 }
+
 .hide {
     display: none;
 }
+
+.home-content, .about-content, .work-content, .resume-content, .contact-content {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #adadad; 
+    border-radius: 40px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(10, 10, 9, 0.5);
+        border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(10, 10, 9, 0.7);  }

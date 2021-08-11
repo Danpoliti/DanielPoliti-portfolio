@@ -2,88 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Daniel Politi</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Daniel Politi</title>
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <nav class="navigation">
+    <nav class="navigation">
 
-            <ul class="nav-ul">
-                <li id="display-home"><button class="button-nav" >Home</button> </li>
-                <li id="display-about"><button class="button-nav" >About</button> </li>
-                <li id="display-work"><button class="button-nav">Work</button> </li>
-                <li id="display-resume"><button class="button-nav">Resume</button> </li>
+      <ul class="nav-ul">
+        <li id="display-home"><button class="button-nav">Home</button> </li>
+        <li id="display-about"><button class="button-nav">About</button> </li>
+        <li id="display-work"><button class="button-nav">Work</button> </li>
+        <li id="display-resume"><button class="button-nav">Resume</button> </li>
 
-            </ul>
+      </ul>
 
-            <div class="contact" id="display-contact">
-                <p ><button class="button-nav">Contact</button></p>
-            </div>
-        </nav>
-    </header>
+      <div class="contact" id="display-contact">
+        <p><button class="button-nav">Contact</button></p>
+      </div>
+    </nav>
+  </header>
 
-    <main class="main-content">
-        <section class="home-content" id="homeContent">
-            <div>
-                <h2>Hi, I'm Daniel.</h2>
-                <h1>Designer, UX oriented.</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
-                    labore provident temporibus aspernatur veniam.</h3>
-            </div>
-        </section>
-        <section class="about-content hide" id="aboutContent">
-            <div>
-                <h2>Hi, I'm Daniel.</h2>
-                <h1>ABOUT CONTENT</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
-                    labore provident temporibus aspernatur veniam.</h3>
-            </div>
-        </section>
-        <section class="work-content hide" id="workContent">
-            <div>
-                <h2>Hi, I'm Daniel.</h2>
-                <h1>WORK CONTENT</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
-                    labore provident temporibus aspernatur veniam.</h3>
-            </div>
-        </section>
-        <section class="resume-content hide" id="resumeContent">
-            <div>
-                <h2>Hi, I'm Daniel.</h2>
+  <main class="main-content">
+    <section class="home-content" id="homeContent">
+      <div>
+        <h2>Hi, I'm Daniel.</h2>
+        <h1>Web Designer, UX oriented.</h1>
+        <h3>Multidisciplinary designer focused on bringing the best experience to the user.</h3>
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+          labore provident temporibus aspernatur veniam.</h3>
+      </div>
+    </section>
+    <section class="about-content hide" id="aboutContent">
+      <div>
+        <h2>Hi, I'm Daniel.</h2>
+        <h1>ABOUT CONTENT</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+          labore provident temporibus aspernatur veniam.</h3>
+      </div>
+    </section>
+    <section class="work-content hide" id="workContent">
+      <div>
+        <h2>Hi, I'm Daniel.</h2>
+        <h1>WORK CONTENT</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
+          labore provident temporibus aspernatur veniam.</h3>
+      </div>
+    </section>
+    <section class="resume-content hide" id="resumeContent">
+      <!-- <form action="doc/resume.pdf" method="get"> -->
+        <button type="submit" onclick="window.open('doc/resume.pdf')" id="download-button"><img src="img/download-resume.svg" alt="Resume - Download button"></button>
+      <!-- </form> -->
+      <div class="resume-scroll">
+        <img src="img/resume.png" alt="">
+        <!-- <h2>Hi, I'm Daniel.</h2>
                 <h1>RESUME CONTENT</h1>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eum? .</h3>
                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo at in nihil dignissimos ab amet
-                    labore provident temporibus aspernatur veniam.</h3>
-            </div>
-        </section>
-        <section class="contact-content hide" id="contactContent">
-            <h1 class="brand">Let's chat...</h1>
-            <div >
-                <div class="box-container">
-              
-                  <div class="contact-fields">
-                    <h3>Email Us</h3>
-                    <!-- <div class="alert">Your message has been sent!</div> -->
-                    <form id="contactForm">
-                        <label>Name</label>
-                      <p>
-                        <input type="text" name="name" id="name" required>
-                      </p>
-                      <label>Email Address</label>
-                      <p>
-                        <input type="email" name="email" id="email" required>
-                      </p>
-                      <!-- <label>Topic</label> -->
-                      <!-- <p>
+                    labore provident temporibus aspernatur veniam.</h3> -->
+      </div>
+    </section>
+    <section class="contact-content hide" id="contactContent">
+      <h1 class="brand">Contact me</h1>
+      <div>
+        <div class="box-container">
+
+          <div class="contact-fields">
+            <!-- <h3>Email Us</h3> -->
+            <!-- <div class="alert">Your message has been sent!</div> -->
+            <form id="contactForm">
+              <label>Name:</label>
+              <p>
+                <input type="text" name="name" id="name" required>
+              </p>
+              <label>Email Address:</label>
+              <p>
+                <input type="email" name="email" id="email" required>
+              </p>
+              <!-- <label>Topic</label> -->
+              <!-- <p>
                         <select name="topic" id="topic" required>
                           <option value="">----Pick a topic----</option>
                           <option value="Reviews">Reviews</option>
@@ -121,27 +125,27 @@
                           <option value="The Red Turtle">The Red Turtle</option>
                           </select>
                       </p> -->
-                      <label>Message</label>
-                      <p class="full">
-                        <textarea name="message" id="message" rows="15"  required></textarea>
-                      </p>
-                      <p class="submit-contact">
-                        <button type="submit" class="btn-submit">Submit</button>
-                      </p>
-                    </form>
-                  </div>
-                </div>
-              </div>  
-        </section>
-        <section class="photo-container">
-            <div class="bio-photo-div">
-                <img src="img/photo_modification_BW.png" alt="bio photo">
-            </div>
-        </section>
-    </main>
+              <label>Message:</label>
+              <p class="full">
+                <textarea name="message" id="message" rows="15" required></textarea>
+              </p>
+              <p class="submit-contact">
+                <button type="submit" class="btn-submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="photo-container">
+      <div class="bio-photo-div">
+        <img src="img/photo_modification_BW.png" alt="bio photo">
+      </div>
+    </section>
+  </main>
 
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

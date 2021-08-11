@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
     const displayAbout = document.getElementById("display-about");
     const displayHome = document.getElementById("display-home");
@@ -14,13 +14,17 @@ document.addEventListener("DOMContentLoaded", function(){
     function displayAboutContent() {
 
         sectionAbout.classList.remove("hide");
-        
+
         sectionHome.classList.add("hide");
         sectionWork.classList.add("hide");
         sectionResume.classList.add("hide");
         sectionContact.classList.add("hide");
 
+        displayAbout.setAttribute("style", "color: orange;")
 
+        displayHome.setAttribute("style", "color: white;")
+        displayWork.setAttribute("style", "color: white;")
+        displayResume.setAttribute("style", "color: white;")
     }
 
     function displayHomeContent() {
@@ -32,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function(){
         sectionResume.classList.add("hide");
         sectionContact.classList.add("hide");
 
+        displayHome.setAttribute("style", "color: orange;")
+
+        displayAbout.setAttribute("style", "color: white;")
+        displayWork.setAttribute("style", "color: white;")
+        displayResume.setAttribute("style", "color: white;")
 
     }
     function displayWorkContent() {
@@ -42,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function(){
         sectionHome.classList.add("hide");
         sectionResume.classList.add("hide");
         sectionContact.classList.add("hide");
+
+        displayWork.setAttribute("style", "color: orange;")
+
+        displayAbout.setAttribute("style", "color: white;")
+        displayHome.setAttribute("style", "color: white;")
+        displayResume.setAttribute("style", "color: white;")
 
 
     }
@@ -54,6 +69,12 @@ document.addEventListener("DOMContentLoaded", function(){
         sectionHome.classList.add("hide");
         sectionContact.classList.add("hide");
 
+        displayResume.setAttribute("style", "color: orange;")
+
+        displayAbout.setAttribute("style", "color: white;")
+        displayWork.setAttribute("style", "color: white;")
+        displayHome.setAttribute("style", "color: white;")
+
 
     }
     function displayContactContent() {
@@ -64,6 +85,11 @@ document.addEventListener("DOMContentLoaded", function(){
         sectionWork.classList.add("hide");
         sectionHome.classList.add("hide");
         sectionResume.classList.add("hide");
+
+        displayResume.setAttribute("style", "color: white;")
+        displayAbout.setAttribute("style", "color: white;")
+        displayWork.setAttribute("style", "color: white;")
+        displayHome.setAttribute("style", "color: white;")
 
 
     }
