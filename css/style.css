@@ -20,11 +20,11 @@ html, body {
 /* Font family and style for text */
 h1 {
     font-family:Georgia, 'Times New Roman', Times, serif ;
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 h3 {
@@ -43,8 +43,8 @@ a {
 
 /* Naigation bar styling */
 .navigation {
-    display: flex;
-    justify-content: space-between;
+    /* display: none; */
+    justify-content:space-around;
     box-shadow: 1px 1px 400px rgb(15, 13, 13);
     background-color: rgba(10, 10, 9, 0.3);
 }
@@ -54,12 +54,14 @@ a {
     flex-direction: row;
     list-style-type: none;
     margin: 0;
+    padding-left: 0;
+    justify-content: center;
 }
 
 .nav-ul li {
-    padding: 1.5em;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding: .8em;
+    /* padding-right: 25%;
+    padding-left: 25%; */
 }
 
 .nav-ul li:hover {
@@ -70,12 +72,84 @@ a {
 
 /* Contact button style */
 .contact {
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* text-align: center; */
     padding-left: 2em;
     padding-right: 2em;
     padding-top: .5em;
     color: rgb(255, 167, 52);
 }
+/* #contact-button-img {
+    color: orange;
+    width: 45px;
+    
+}
+#contact-button-img img {
+    color: orange;
+    width: 45px;
+    
+} */
+/* ==================== */
+.page-footer {
+
+
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 1em; */
+    margin: 0;
+}
+
+.page-footer a {
+    color: var(--font-color2);
+    text-decoration: none;
+}
+.social {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    padding-right: 1em;
+}
+.social li {
+    margin-bottom: 1em;
+    margin-left: .3em;
+    margin-right: .3em;
+}
+.fa {
+    border-radius: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin: .2em;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: orange;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+.fa-twitter {
+    background: orange;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+.fa-instagram {
+    background: orange;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+}
+
+/* ==================== */
 
 .contact:hover {
     background: rgba(0, 0, 0, 0.3);
@@ -83,7 +157,7 @@ a {
 }
 
 ul {
-    padding-left: 4em;
+    /* padding-left: 4em; */
 }
 /* Navigation buttons style */
 .button-nav {
@@ -98,15 +172,15 @@ ul {
 /* Work content - projects section */
 .work-content-projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "project-description project-img"
-    "project-link project-img";
-    height: 400px;
+    "project-description"
+    "project-img";
+    height: 330px;
     padding: 1em;
 }
 .work-content-projects p {
-    margin-top: 5em;
+    margin-top: 2em;
     grid-area: project-description;
 }
 
@@ -132,7 +206,8 @@ ul {
 /* Main content layout */
 .main-content {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    /* height: 100%; */
     justify-content: space-between;
 }
 
@@ -142,25 +217,25 @@ ul {
 }
 
 .bio-photo-div img {
-    height: 840px;
-    width: 840px;
-    margin-top: auto;
+    height: 250px;
+    width: 250px;
+    margin-top: 2em;
 }
 
 
 .bio-photo-div {
-    background-image: radial-gradient(circle at top right, rgb(100, 100, 100) 20%, rgba(255, 255, 255, 0), transparent);
-    height: 1000px;
+    /* background-image: radial-gradient(circle at top right, rgb(100, 100, 100) 20%, rgba(255, 255, 255, 0), transparent); */
+    /* height: 500px; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 /* Home Content Section */
 .home-content {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: large;
-    padding-left: 5em;
+    font-size: small;
+    padding-left: 1.5em;
 }
 
 .home-content a, strong {
@@ -178,36 +253,36 @@ ul {
 .about-content {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: large;
-    padding-left: 5em;
+    font-size: small;
+    padding-left: 1.5em;
 }
 
 /* Work Content Section */
 .work-content {
     /* margin-top: auto; */
     margin-bottom: auto;
-    font-size: large;
-    padding-left: 5em;
+    font-size: small;
+    padding-left: 1.5em;
 }
 
 /* Resume Content Section */
 .resume-content {
     margin-top: auto;
     margin-bottom: auto;
-    font-size: large;
-    padding-left: 5em;
+    font-size: small;
+    padding-left: 1.5em;
 }
 
 .resume-content img {
-    max-width: 900px;
+    max-width: 90%;
     margin: 1em;
 }
 
 .resume-scroll {
     background-image: linear-gradient(45deg, rgba(63, 63, 63, 0.5), rgba(128, 128, 128, 0.5), rgba(63, 63, 63, 0.5));
-    width: 1000px;
-    overflow: auto;
-    height: 500px;
+    width: 90%;
+    /* overflow: auto; */
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -215,12 +290,12 @@ ul {
 /* Contanct Content Section */
 .contact-content {
     margin: auto;
-    margin-top: 5em;
+    margin-top: 1em;
     font-size: large;
-    padding-left: 2em;
+    padding-left: 1em;
     background: rgba(75, 60, 60, 0.2);
     border-radius: 20px;
-    width: 650px;
+    width: 300px;
 }
 
 .contact-fields form button:hover, .contact-fields form button:focus {
@@ -241,8 +316,8 @@ ul {
     color: white;
     border: none;
     border-radius: 5px;
-    height: 2.5em;
-    width: 600px;
+    height: 1.5em;
+    width: 270px;
 }
 
 .contact-fields textarea {
@@ -261,12 +336,12 @@ ul {
     margin-bottom: 5px;
     display: none;
     border-radius: 10px;
-    width: 600px;
+    width: 250px;
     
   }
 
   .submit-contact {
-      text-align: right;
+      text-align: center;
   }
   .btn-submit {background-image: linear-gradient(to right, #b45a06 0%, #5f3600  51%, #ff9f22  100%)}
   .btn-submit {
@@ -292,7 +367,9 @@ ul {
    
 
 #download-button {
-    width: 5%;
+    /* position: absolute; */
+    top: 350px;
+    width: 15%;
     text-align: center;
     padding: 0;
     margin-left: 1.5em;
@@ -307,7 +384,7 @@ ul {
     
 }
 #download-button:active {
-    background-color: rgb(52, 151, 98);
+    background-color: orange;
     
 }
 #download-button img {
@@ -398,4 +475,359 @@ ul {
   ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(10, 10, 9, 0.7);  }
 
-    
+    @media screen and (min-width: 30em ) {
+        .work-content-projects {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "project-description project-img"
+            "project-link project-img";
+            height: 50%;
+            padding: 1em;
+        }
+
+        
+        .contact-content {
+            margin-top: 3em;
+            width: 370px;
+        }
+              
+
+        
+        .contact-fields input, textarea {
+            height: 2.5em;
+            width: 345px;
+        }
+        
+
+        .alert {
+            width: 335px;
+            
+          }
+        
+          .submit-contact {
+              text-align: center;
+          }
+
+
+    }
+
+    @media screen and (min-width: 50em) {
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        
+        .nav-ul li {
+            padding: 2em;
+        }
+              
+        /* Contact button style */
+        .contact {
+            text-align: left;
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: .5em;
+            color: rgb(255, 167, 52);
+        }
+              
+        ul {
+            padding-left: 4em;
+        }
+        .contact-content {
+            margin-top: 3em;
+            width: 570px;
+        }
+              
+
+        
+        .contact-fields input, textarea {
+            height: 2.5em;
+            width: 545px;
+        }
+        
+
+        .alert {
+            width: 535px;
+            
+          }
+        
+          .submit-contact {
+              text-align: center;
+          }
+
+        .social li {
+            margin-left: .5em;
+            margin-right: .5em;
+        }
+        .fa {
+            border-radius: 15%;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+    }
+
+    @media screen and (min-width: 70em) {
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        
+        .nav-ul li {
+            padding: 2.5em;
+        }
+              
+        /* Contact button style */
+
+              
+        ul {
+            padding-left: 4em;
+        }
+
+              
+
+        
+        .contact-fields input, textarea {
+            height: 2.5em;
+            width: 500px;
+        }
+        
+
+        .alert {
+            width: 480px;
+            
+          }
+        
+
+          .main-content {
+            background-image: radial-gradient(circle at top right, rgb(100, 100, 100) 20%, rgba(255, 255, 255, 0), transparent);
+
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            justify-content: space-between;
+        }
+        
+        /* Bio Photo and style  */
+        .photo-container {
+            text-align: right;
+        }
+        
+        .bio-photo-div img {
+            height: 600px;
+            width: 600px;
+            margin-top: auto;
+        }
+        
+        
+        .bio-photo-div {
+            height: 800px;
+            width: 540px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        /* Home Content Section */
+        .home-content {
+            margin-top: 10em;
+            margin-bottom: auto;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+
+        
+        
+        /* About Content Section */
+        .about-content {
+            margin-top: 8em;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+        /* Work Content Section */
+        .work-content {
+            margin-top: 3em;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+        /* Resume Content Section */
+        .resume-content {
+            margin-top: 6em;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+        .resume-content img {
+            max-width: 900px;
+            margin: 1em;
+        }
+        
+        .resume-scroll {
+            background-image: linear-gradient(45deg, rgba(63, 63, 63, 0.5), rgba(128, 128, 128, 0.5), rgba(63, 63, 63, 0.5));
+            width: 600px;
+            overflow: auto;
+            height: 500px;
+            border-radius: 10px;
+        }
+        
+        
+        /* Contanct Content Section */
+        .contact-content {
+            margin: auto;
+            margin-top: 5em;
+            font-size: large;
+            padding-left: 2em;
+            background: rgba(75, 60, 60, 0.2);
+            border-radius: 20px;
+            width: 650px;
+        }
+        
+
+        .social li {
+            margin-bottom: 2em;
+            margin-left: .7em;
+            margin-right: .7em;
+        }
+
+        .page-footer {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .social span {
+            font-size: 25px;
+        }
+        .fa {
+            border-radius: 15%;
+            font-size: 20px;
+            padding: 25px;
+            margin: .2em;
+            text-align: center;
+            text-decoration: none;
+            width: 20px;
+        }
+    }
+
+    @media screen and (min-width: 90em) {
+
+        h1 {
+            font-size: 3.5em;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        .button-nav {
+            font-size: large;
+        }
+        
+        .nav-ul li {
+            padding: 2.5em;
+        }
+              
+        /* Contact button style */
+           .contact-fields input, textarea {
+            height: 3em;
+            width: 700px;
+        }
+        
+
+        .alert {
+            width: 680px;
+            
+          }
+        
+        
+        /* Bio Photo and style  */
+        .photo-container {
+            text-align: right;
+        }
+        
+        .bio-photo-div img {
+            height: 800px;
+            width: 800px;
+            margin-top: auto;
+        }
+        
+        
+        .bio-photo-div {
+            height: 950px;
+            width: 840px;
+
+        }
+        
+        /* Home Content Section */
+        .home-content {
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: large;
+            padding-left: 5em;
+        }
+        
+
+        
+        
+        /* About Content Section */
+        .about-content {
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: large;
+            padding-left: 5em;
+        }
+        
+        /* Work Content Section */
+        .work-content {
+            margin-top: 2em;
+            margin-bottom: auto;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+        /* Resume Content Section */
+        .resume-content {
+            margin-top: 6em;
+            font-size: large;
+            padding-left: 3em;
+        }
+        
+        .resume-content img {
+            max-width: 900px;
+            margin: 1em;
+        }
+        
+        .resume-scroll {
+            width: 1000px;
+            height: 600px;
+        }
+        
+        
+        /* Contanct Content Section */
+        .contact-content {
+            font-size: large;
+            width: 750px;
+        }
+        .contact {
+            padding-top: 1.5em;
+        }
+
+        .social li {
+margin-left: 2em;
+margin-right: 2em;
+        }
+
+        .work-content-projects {
+            height: 430px;
+            /* padding: 1em; */
+        }
+    }
